@@ -1,0 +1,5 @@
+name,E_GPa,Fty_MPa,Ftu_MPa,density_kg_m3,notes
+Al 2024-T3,73.1,345,483,2780,typical sheet values
+Al 7075-T6,71.7,503,572,2810,typical extrusion values
+Ti-6Al-4V,113.8,880,950,4430,annealed
+Steel 4130,205.0,435,670,7850,normalised

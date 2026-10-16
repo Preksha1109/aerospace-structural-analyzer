@@ -1,0 +1,13 @@
+{
+  "name": "Generic 150 kg fixed-wing UAV (illustrative)",
+  "mtow_kg": 150.0,
+  "half_span_m": 3.0,
+  "taper_ratio": 0.6,
+  "wing_mass_per_m": 2.5,
+  "pod_mass_kg": 12.0,
+  "pod_station_m": 1.0,
+  "spar": {
+    "material": "Al 7075-T6",
+    "section": {"type": "tube", "outer_diameter_mm": 75.0, "wall_mm": 2.5}
+  }
+}

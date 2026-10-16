@@ -1,0 +1,7 @@
+case,description,load_factor,distribution,lift,pod
+LC1,1g cruise,1.0,schrenk,1,1
+LC2,+3.8g pull-up,3.8,schrenk,1,1
+LC3,+3.8g pull-up without pod,3.8,schrenk,1,0
+LC4,+3.8g pull-up (elliptic lift),3.8,elliptic,1,1
+LC5,-1.52g push-over,-1.52,schrenk,1,1
+LC6,2g taxi bump (no lift),2.0,none,0,1

@@ -1,0 +1,91 @@
+{
+  "n_train": 3200,
+  "n_test": 800,
+  "n_extrapolation": 500,
+  "training_ranges": {
+    "load_factor": [
+      1.0,
+      4.5
+    ],
+    "mtow_kg": [
+      50.0,
+      400.0
+    ],
+    "half_span_m": [
+      1.5,
+      4.5
+    ],
+    "taper_ratio": [
+      0.3,
+      1.0
+    ],
+    "wing_mass_per_m": [
+      1.0,
+      5.0
+    ],
+    "pod_mass_kg": [
+      0.0,
+      25.0
+    ],
+    "pod_station_frac": [
+      0.15,
+      0.6
+    ],
+    "outer_diameter_mm": [
+      40.0,
+      120.0
+    ],
+    "wall_to_diameter": [
+      0.02,
+      0.08
+    ]
+  },
+  "extrapolation_half_span_m": [
+    4.5,
+    6.0
+  ],
+  "models": {
+    "Linear regression (raw features)": {
+      "test": {
+        "MAPE_pct": 27.78062278384724,
+        "p95_pct": 88.20859119685667,
+        "max_pct": 264.5012288349021,
+        "R2": 0.836445800823602
+      },
+      "extrapolation": {
+        "MAPE_pct": 27.207983310706545,
+        "p95_pct": 85.25653784077628,
+        "max_pct": 197.65139319395192,
+        "R2": 0.8018282520013527
+      }
+    },
+    "Gradient boosting (raw features)": {
+      "test": {
+        "MAPE_pct": 10.79649293233138,
+        "p95_pct": 28.121661995139604,
+        "max_pct": 151.6246282630099,
+        "R2": 0.9446569643031529
+      },
+      "extrapolation": {
+        "MAPE_pct": 15.822684495019502,
+        "p95_pct": 30.973016521341133,
+        "max_pct": 69.12028289915114,
+        "R2": 0.8230371849633134
+      }
+    },
+    "Gradient boosting (physics-informed)": {
+      "test": {
+        "MAPE_pct": 0.8115960857835023,
+        "p95_pct": 2.492262828656596,
+        "max_pct": 13.670897383201353,
+        "R2": 0.9994160925388987
+      },
+      "extrapolation": {
+        "MAPE_pct": 1.0550019045296286,
+        "p95_pct": 3.3038787391772066,
+        "max_pct": 16.093932844017587,
+        "R2": 0.9990297374772451
+      }
+    }
+  }
+}
